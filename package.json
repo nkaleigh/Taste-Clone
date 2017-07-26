@@ -19,8 +19,8 @@
   "description": "",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "cors": "^2.8.4",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
-    "massive": "^3.1.0"
+    "massive": "^3.0.0"
   }
 }

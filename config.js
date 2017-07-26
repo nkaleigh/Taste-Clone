@@ -1,3 +1,3 @@
 module.exports = {
-    elephantsql: 'postgres://maqktzis:ca_dhKOdKHFVU7zl6Fqw5zzkqkLJJGLr@babar.elephantsql.com:5432/maqktzis'
+    elephantsql: 'postgres://qjcjgfcu:__Z8_-lsvZAts7fsupt6gKClSkfY9bFR@stampy.db.elephantsql.com:5432/qjcjgfcu'
 };

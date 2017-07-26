@@ -29,7 +29,7 @@ app.post('/api/test/', function(req, res) {
         res.status(200).send(response);
     }).catch(function(err) {
         res.status(500).send(err);
-    })
+    });
 });
 app.get('/api/chocolate/', function(req, res) {
     console.log('appliepie');
@@ -38,9 +38,16 @@ app.get('/api/chocolate/', function(req, res) {
         res.status(200).send('bite')
     }).catch(function(err) {
         res.status(500).send(err);
-    })
-})
-// app.get('/api/getchocolates', controller.getchocolates);
+    });
+});
+app.get('/api/tastechocolates/', function(req, res) {
+    console.log('tehehe');
+    req.app.get('db').gettastechocolates().then(function(response) {
+        res.status(200).send(response);
+    }).catch(function(err) {
+        res.status(500).send(err);
+    });
+});
 
 app.listen(port, function() {
     console.log('Listening on port ' + port);

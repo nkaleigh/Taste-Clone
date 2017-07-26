@@ -1,3 +1,8 @@
 <!DOCTYPE html>
 
  <button ng-click="broken()">hi</button> 
+<div ng-repeat="urlresponse in response">
+    <img src="{{urlresponse.front_large}}">
+    <p>{{urlresponse.name}}</p>
+    <p>{{urlresponse.price}}</p>
+</div>

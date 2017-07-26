@@ -4,7 +4,7 @@ create table chocolates (
     price int,
     img_url_lg text,
     img_url_gr_front text,
-    img_url_gr_back text,
+    img_url_gr_back text
 );
 
 insert into chocolates (name, price, img_url_lg, img_url_gr_front, img_url_gr_back)

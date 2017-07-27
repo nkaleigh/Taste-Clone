@@ -1,14 +1,13 @@
 @font-face {
     font-family: Bebas Neue;
-    src: url(./fonts/BebasNeue.otf);
+    src: url(./fonts/bebas_neue/BebasNeue%20Bold.otf);
 }
-
 @import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 .wrapper {
-    font-family: 'Carrois Gothic SC', sans-serif;
-    letter-spacing: 2.3px;
     color: #635e5d;
-    font-size: .77em;
+    font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .header {
@@ -16,6 +15,8 @@
     height: 95px;
     background-color: #191d21;
     padding: 0 20px;
+    letter-spacing: 2.3px;
+    font-size: .77em;
 }
 
 .header-inner {
@@ -70,9 +71,82 @@
     cursor: pointer;
 }
 
+.page {
+    width: 100%;
+    height: auto;
+    color: #57524e
+    /* background: pink; */
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-1-section {
+    width: 100%;
+    background: blue;
+}
+
+.welcome-1-section-img {
+    width: 100%;
+    height: 100%;
+    background: url('../img/welcome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.welcome-2-section {
+    padding: 72.5px 0;
+    margin-left: 36.74px;
+    margin-right: 36.74px;
+    color: #57524e;
+    /* background: yellow; */
+}
+
+h2 {
+    font-family: Bebas Neue;
+    font-size: 1.66em;
+    line-height: 39px;
+    margin-bottom: 17.8px;
+    color: #191d21;
+}
+
+p {
+    font-size: .955em;
+    line-height: 24px;
+    letter-spacing: 1.3px;
+    color: rgb(42, 48, 55);
+}
+
+.beans-2-section {
+    padding: 40px 20px;
+    color: #57524e;
+    background: green;
+}
+
+.factory-2-section {
+    padding: 62.5px 20px 62.5px 20px;
+    color: #57524e;
+    background: red;
+}
+
+.chocolate-2-section {
+    padding: 62.5px 20px 62.5px 20px;
+    color: #57524e;
+    background: blue;
+}
+
 @media (min-width: 640px) {
     .main-header {
         height: 110px;
+    }
+    .welcome-2-section {
+        padding: 136px 34px;
+    }
+    .beans-2-section {
+        padding: 68px 34px
     }
 }
 
@@ -106,7 +180,7 @@
     }
     .header-nav {
         padding: 0;
-        margin-top: -52px;  
+        margin-top: -52px;
         /* background: purple; */
     }
     .factory {

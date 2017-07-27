@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(./fonts/BebasNeue.otf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
+.wrapper {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    letter-spacing: 2.3px;
+    color: #635e5d;
+    font-size: .77em;
+}
+
+.header {
+    width: auto;
+    height: 95px;
+    background-color: #191d21;
+    padding: 0 20px;
+}
+
+.header-inner {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    /* background: pink; */
+}
+
+.naviation-toggle {
+    width: 22px;
+    height: 22px;
+    color: rgba(228, 223, 211, .9);
+    cursor: pointer;
+    background: yellow;
+}
+
+.bar {
+    width: 22px;
+    height: 2px;
+    background-color: #e4dfd3;
+    position: absolute;
+}
+
+.middle-bar {
+    top: 28px;
+}
+
+.bottom-bar {
+    top: 35px;
+}
+
+.logo-wrapper {
+    width: auto;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.logo-wrapper img {
+    max-height: 100%;
+    max-width: 115px;
+}
+
+.header-nav {
+    color: rgba(228, 223, 211, .9);
+    display: none;
+}
+
+.header-nav div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .main-header {
+        height: 110px;
+    }
+}
+
+@media (max-width: 860) {}
+
+@media (min-width: 860px) {
+    .header {
+        height: 193px;
+    }
+    .header-inner {
+        padding: 30px 0;
+    }
+    .navigation-toggle {
+        display: none;
+    }
+    .logo-wrapper img {
+        width: 200px;
+        max-width: 200px;
+        max-height: auto;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 18.5px 14px;
+    }
+}
+
+@media (min-width: 1130px) {
+    .header {
+        height: 148.5px;
+    }
+    .header-nav {
+        padding: 0;
+        margin-top: -52px;  
+        /* background: purple; */
+    }
+    .factory {
+        margin-right: 130px;
+    }
+    .chocolate {
+        margin-left: 130px;
+    }
+}

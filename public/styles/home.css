@@ -83,7 +83,7 @@
     height: auto;
 }
 
-.welcome-1-section-img {
+.welcome-1-section {
     width: 100%;
     height: 0;
     padding-top: 66.71%;
@@ -97,7 +97,7 @@
     /* margin-left: 36.74px;
     margin-right: 36.74px; */
     color: #57524e;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 h2 {
@@ -135,19 +135,49 @@ h3 {
     color: #57524e;
 }
 
+.beans-1-section {
+    width: 100%;
+    height: 0;
+    padding-top: 66.71%;
+    background: url('../img/thebeans1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .beans-2-section {
     padding: 60px 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.factory-1-section {
+    width: 100%;
+    height: 0;
+    padding-top: 66.71%;
+    background: url('../img/thefactory1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .factory-2-section {
     padding: 60px 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.chocolate-1-section {
+    width: 100%;
+    height: 0;
+    padding-top: 66.71%;
+    background: url('../img/thechocolate.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .chocolate-2-section {
     padding: 60px 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .home-button-wrapper {
@@ -355,15 +385,15 @@ h3 {
     }
     .beans-2-section {
         padding: 60px 13%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .factory-2-section {
         padding: 60px 13%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .chocolate-2-section {
         padding: 60px 13%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 }
 
@@ -387,14 +417,14 @@ h3 {
     }
     .beans-2-section {
         padding: 60px 17%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .factory-2-section {
         padding: 60px 17%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .chocolate-2-section {
         padding: 60px 17%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 }

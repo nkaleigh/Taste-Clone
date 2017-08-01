@@ -83,18 +83,13 @@
     height: auto;
 }
 
-.welcome-1-section {
-    width: 100%;
-    background: blue;
-}
-
 .welcome-1-section-img {
     width: 100%;
-    height: 100%;
-    background: url('../img/welcome.jpg');
+    height: 0;
+    padding-top: 66.71%;
+    background: url('../img/welcome.1000x667.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
 }
 
 .welcome-2-section {

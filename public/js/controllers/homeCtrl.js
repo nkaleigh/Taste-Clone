@@ -1,4 +1,4 @@
-angular.module('App').controller('homeCtrl', function($scope, service) {
+angular.module('App').controller('homeCtrl', function($scope, $location, $anchorScroll, service) {
     // $scope.broken = function() {
     //     console.log('reached controller');
     //     return service.broken().then(function(response) {
@@ -6,4 +6,10 @@ angular.module('App').controller('homeCtrl', function($scope, service) {
     //         $scope.response = response.data;
     //     })
     // }
+    $scope.scrollTo = function(id) {
+        var old = $location.hash();
+        $location.hash(id);
+       $anchorScroll();
+       $location.hash(old);
+    }
 });

@@ -12,26 +12,26 @@
                 <img src="./img/logo2.png" alt="logo">
             </div>
             <div class="header-nav">
-                <div class="welcome">WELCOME</div>
-                <div class="beans">THE BEANS</div>
-                <div class="factory">THE FACTORY</div>
-                <div class="chocolate">THE CHOCOLATE</div>
-                <div class="products">PRODUCTS</div>
-                <div class="news">THE NEWS</div>
+                <a ng-click="scrollTo('welcome')" class="welcome">WELCOME</a>
+                <a ng-click="scrollTo('beans')" class="beans">THE BEANS</a>
+                <a ng-click="scrollTo('factory')" class="factory">THE FACTORY</a>
+                <a ng-click="scrollTo('chocolate')" class="chocolate">THE CHOCOLATE</a>
+                <a class="products">PRODUCTS</a>
+                <a class="news">THE NEWS</a>
             </div>
         </div>
     </header>
     <div class="page">
         <div class="main-content">
             <div class="welcome-1-section"></div>
-            <div class="welcome-2-section">
+            <div id="welcome" class="welcome-2-section">
                 <h2 class="welcome-2-section-title">Welcome to Taste Artisan Chocolate</h2>
                 <p class="welcome-2-section-text">Nestled in the shadows of Mount Timpanogos in Downtown Provo Utah, Taste Artisan Chocolate started as a group
                     of friends with a love of chocolate and a dream to make it in a way that highlights the genetic flavor
                     of the cacao in every bar. From this dream came what you see here. We are excited for you to Taste.</p>
             </div>
             <div class="beans-1-section"></div>
-            <div class="beans-2-section">
+            <div id="beans" class="beans-2-section">
                 <h2 class="nav-2-section-title">Highlighting the genetic flavors of the world's best Cacao.
                 </h2>
                 <h3 class="nav-2-section-subtitle">IT'S NOT UNUSUAL FOR US TO CREATE 20 TEST RECIPES FOR ANY BEAN THAT WE WORK WITH...
@@ -43,7 +43,7 @@
                     when you enjoy Taste Artisan Chocolate.</p>
             </div>
             <div class="factory-1-section"></div>
-            <div class="factory-2-section">
+            <div id="factory" class="factory-2-section">
                 <h2 class="nav-2-section-title">Traditional Chocolate Making Techniques Meet Modern Technology</h2>
                 <h3 class="nav-2-section-subtitle">THE METHODS USED IN CHOCOLATE MAKING HASN'T CHANGED MUCH THROUGH THE GENERATIONS.</h3>
                 <p class="nav-2-section-text">We utilize traditional chocolate making methods and modern technologies to craft chocolate that showcases
@@ -53,7 +53,7 @@
                 <!-- <button>LEARN MORE</button> -->
             </div>
             <div class="chocolate-1-section"></div>
-            <div class="chocolate-2-section">
+            <div id="chocolate" class="chocolate-2-section">
                 <h2 class="nav-2-section-title">Our Chocolate</h2>
                 <h3 class="nav-2-section-subtitle">WE ARE WORKING HARD TO BRING YOU MORE BAR VARIETIES!</h3>
                 <p class="nav-2-section-text">We are currently working with Beans that have origins in Peru, Ecuador, Madagascar and have many others on

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<main role="main" class="wrapper">
+<main role="main" ng-class="{'wrapper': !hamburgerDropdown, 'wrapper-modal-open': hamburgerDropdown}">
     <header class="header">
         <div class="header-inner">
-            <div class="navigation-toggle">
+            <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
                 <div class="bar top-bar"></div>
                 <div class="bar middle-bar"></div>
                 <div class="bar bottom-bar"></div>
@@ -21,6 +21,7 @@
             </div>
         </div>
     </header>
+    <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="page">
         <div class="main-content">
             <div class="welcome-1-section"></div>

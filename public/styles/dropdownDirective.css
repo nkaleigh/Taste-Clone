@@ -1,0 +1,38 @@
+.dropdown-directive-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(25, 29, 33, .97);
+    line-height: 1em;
+    position: fixed;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.dropdown-directive-overlay-inner {
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+
+.dropdown-directive-link {
+    color: rgba(228, 223, 211, .9);
+    font-family: 'Carrois Gothic SC', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1.36em;
+    /* display: block; */
+    padding: .6em 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1em;
+    cursor: pointer;
+    /* background: purple; */
+}
+
+.dropdown-directive-link:hover {
+    color: white;
+}
+
+.wrapper-modal-open {
+    position: fixed;
+}

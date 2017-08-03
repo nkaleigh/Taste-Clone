@@ -6,10 +6,11 @@ angular.module('App').controller('homeCtrl', function($scope, $location, $anchor
     //         $scope.response = response.data;
     //     })
     // }
+
     $scope.scrollTo = function(id) {
         var old = $location.hash();
         $location.hash(id);
        $anchorScroll();
        $location.hash(old);
-    }
+    };
 });

@@ -36,3 +36,15 @@
 .wrapper-modal-open {
     position: fixed;
 }
+
+@media (min-width: 640px) {
+    .dropdown-directive-link {
+        font-size: 1.68em;
+    }
+}
+
+@media (min-width: 860px) {
+    .dropdown-directive-overlay {
+        display: none;
+    }       
+}

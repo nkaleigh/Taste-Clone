@@ -1,3 +1,4 @@
-angular.module('App').controller('newsCtrl', function($scope) {
+angular.module('App').controller('newsCtrl', function ($rootScope, $scope, $location, $anchorScroll, $state) {
 
-});
+
+})

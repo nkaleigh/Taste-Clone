@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(./fonts/bebas_neue/BebasNeue%20Bold.otf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500");
+.news-page {
+    padding: 40px 20px;
+}
+
+.entry-header {
+    margin-bottom: 1em;
+    max-width: 36em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.entry-dateline {
+    line-height: 1.6em;
+    font-family: Bebas Neue;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #57524e;
+}
+
+.entry-title {
+    margin-top: 23px;
+    line-height: 1.1em;
+    font-family: Bebas Neue;
+    font-size: 34px;
+    text-transform: 2;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #201713;
+}
+
+.entry-thumb-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.entry-thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.entry-summary {
+    margin-top: 53px;
+    text-align: center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+    font-weight: 400;
+    font-style: normal;
+    color: #57524e;
+}
+
+.entry-footer {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    line-height: 1.6em;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #57524e;
+    margin-right: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    /* background: blue; */
+}
+
+.entry-actions {
+    width: 145px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+     /* background: red;  */
+}
+
+.fa-heart {
+    transform: translateY(-10%);
+}
+
+.entry-like-text {
+    font-size: 14px;
+}
+
+.fa-share-alt {
+        transform: translateY(-10%);
+}
+
+.entry-share-text {
+    font-size: 14px;
+}
+
+@media (min-width: 540px) {
+    .entry-thumb {
+        width: 500px;
+    }
+}

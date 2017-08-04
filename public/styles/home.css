@@ -44,30 +44,30 @@
 }
 
 .top-bar {
-     /* background: red;  */
+    /* background: red;  */
 }
 
 .middle-bar {
-      top: 7px;
-     /* background: blue;  */
+    top: 7px;
+    /* background: blue;  */
 }
 
 .bottom-bar {
-     top: 14px;
-     /* background: green;  */
+    top: 14px;
+    /* background: green;  */
 }
 
 .navigation-toggle:hover .top-bar {
     transform: translateY(0.569em) rotate(45deg);
 }
 
- .navigation-toggle:hover .middle-bar {
+.navigation-toggle:hover .middle-bar {
     opacity: 0;
 }
 
 .navigation-toggle:hover .bottom-bar {
     transform: translateY(-0.569em) rotate(-45deg);
-} 
+}
 
 .logo-wrapper {
     width: auto;
@@ -87,7 +87,7 @@
 }
 
 .header-nav a {
-         color: rgba(228, 223, 211, .9); 
+    color: rgba(228, 223, 211, .9);
     text-decoration: none;
 }
 

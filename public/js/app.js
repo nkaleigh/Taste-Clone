@@ -3,9 +3,10 @@ angular.module('App', ['ui.router']).config(function($stateProvider, $urlRouterP
     $urlRouterProvider.otherwise('/');
 
     $stateProvider.state('home', {
+        url: '/:scrollTo',
         url: '/',
         templateUrl: './views/home.html',
-        controller: 'homeCtrl'
+        controller: 'homeCtrl',
     })
     .state('products', {
         url: '/our-products',

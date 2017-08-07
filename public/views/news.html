@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<header class="header">
+<header id="header" class="header">
     <div class="header-inner">
         <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
             <div class="bar top-bar"></div>
@@ -21,8 +21,8 @@
     </div>
 </header>
 <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
-<div id="newspagetop" class="news-page">
-    <div class="article-1">
+<div class="news-page">
+    <div id="article-1" class="article-1">
         <header class="entry-header">
             <div class="entry-dateline">MAY 27, 2016</div>
             <div class="entry-title">COLEMAN & DAVIS FEATURES IN SAVEUR MAGAZINE!
@@ -48,26 +48,26 @@
         </footer>
     </div>
 </div>
-<div class="pre-footer">
-    <div class="pre-footer-inner">
-        <div class="social-media-border">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+        <div class="pre-footer">
+            <div class="pre-footer-inner">
+                <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/taste_choc" target="_blank" class="social-media-border">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/taste_choc/" target="_blank" class="social-media-border">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://plus.google.com/107003014177056782057" target="_blank" class="social-media-border">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-        <div class="social-media-border">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-        </div>
-        <div class="social-media-border">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-        </div>
-        <div class="social-media-border">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
 <footer class="footer" fole="contentinfo">
     <div class="footer-inner">
         <div class="news-back-to-top-nav">
-            <a href="#newspagetop">BACK TO TOP</a>
+            <a ng-click="scrollUpTo('header')">BACK TO TOP</a>
         </div>
         <div class="site-info">
             <span class="site-address">TASTE ARTISAN CHOCOLATE, 117 NORTH UNIVERSITY AVENUE, PROVO, UT 84601</span>

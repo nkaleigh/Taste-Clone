@@ -244,7 +244,6 @@ h3 {
     height: auto;
     display: flex;
     justify-content: center;
-    /* background: red; */
 }
 
 .social-media-border {
@@ -256,19 +255,29 @@ h3 {
     box-sizing: border-box;
     border-radius: 50%;
     text-decoration: none;
-    background: transparent;
+    background: transparent; 
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+
+.social-media-border:hover {
+    background: white;
+    border-color: white;
+    text-decoration: none;
+}
+
+.social-media-border:hover i {
+    color: #1f1f1f;
+
 }
 
 .fa-facebook {
     /* font-size: 2em;  */
     text-align: center;
-}
-
-.fa-facebook:hover {
-    color: #191d21;
 }
 
 .fa-twitter {
@@ -316,6 +325,10 @@ h3 {
     color: #fff;
 }
 
+.back-to-top-nav a:hover {
+    color: rgba(228, 223, 211, .9);
+}
+
 .site-info {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -323,11 +336,12 @@ h3 {
     letter-spacing: 1px;
     font-weight: 400;
     font-style: normal;
-    color: #fff;
+    text-decoration: none;
+    color: rgba(228, 223, 211, .9);
 }
 
 .site-info a {
-    color: #fff;
+    color: rgba(228, 223, 211, .9);
     text-decoration: none;
 }
 

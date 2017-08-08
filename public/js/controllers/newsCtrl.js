@@ -1,4 +1,4 @@
-angular.module('App').controller('newsCtrl', function ($scope, $location, $anchorScroll, service) {
+angular.module('App').controller('newsCtrl', function ($scope, $location, $anchorScroll, $state, service) {
 
     $scope.scrollUpTo = function(id) {
         var old = $location.hash();
@@ -6,5 +6,6 @@ angular.module('App').controller('newsCtrl', function ($scope, $location, $ancho
         $anchorScroll();
         $location.hash(old);
     }
+
 
 })

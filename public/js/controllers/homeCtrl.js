@@ -15,13 +15,17 @@ angular.module('App').controller('homeCtrl', function ($scope, $location, $ancho
         $location.hash(original);
     };
 
-    $scope.moduleScrollTo = function(id) {
+    $scope.moduleScrollTo = function (id) {
         $location.hash(id);
         $anchorScroll();
         // $state.go('home', {'#':'id'});
     };
 
-    $scope.news = function() {
+    $scope.products = function () {
+        $state.go('products');
+    };
+
+    $scope.news = function () {
         $state.go('news');
     };
 

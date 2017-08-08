@@ -2,10 +2,10 @@
 
 <div class="dropdown-directive-overlay">
         <div class="dropdown-directive-overlay-inner">
-                <div ng-click="hamburgerDropdown = !hamburgerDropdown; exitModuleScrollTo('welcome')" class="dropdown-directive-link dropdown-directive-welcome">WELCOME</div>
-                <div class="dropdown-directive-link dropdown-directive-beans">THE BEANS</div>
-                <div class="dropdown-directive-link dropdown-directive-factory">THE FACTORY</div>
-                <div class="dropdown-directive-link dropdown-directive-chocolate">THE CHOCOLATE</div>
-                <div class="dropdown-directive-link dropdown-directive-news">THE NEWS</div>
+                <div ng-click="hamburgerDropdown = !hamburgerDropdown; moduleScrollTo('welcome')" class="dropdown-directive-link dropdown-directive-welcome">WELCOME</div>
+                <div ng-click="hamburgerDropdown = !hamburgerDropdown; moduleScrollTo('beans')" class="dropdown-directive-link dropdown-directive-beans">THE BEANS</div>
+                <div ng-click="hamburgerDropdown = !hamburgerDropdown; moduleScrollTo('factory')" class="dropdown-directive-link dropdown-directive-factory">THE FACTORY</div>
+                <div ng-click="hamburgerDropdown = !hamburgerDropdown; moduleScrollTo('chocolate')" class="dropdown-directive-link dropdown-directive-chocolate">THE CHOCOLATE</div>
+                <div ng-click="hamburgerDropdown = !hamburgerDropdown; news()" class="dropdown-directive-link dropdown-directive-news">THE NEWS</div>
         </div>
 </div>

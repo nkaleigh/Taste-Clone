@@ -7,5 +7,14 @@ angular.module('App').controller('newsCtrl', function ($scope, $location, $ancho
         $location.hash(old);
     }
 
+    $scope.moduleScrollTo = function(id) {
+        $state.go('home', {'#':id});
+        // $location.hash(id);
+        // $anchorScroll();
+    };
 
-})
+    $scope.news = function() {
+        $state.go('news');       
+    };
+
+});

@@ -1,81 +1,82 @@
 <!DOCTYPE html>
-
-<header id="header" class="header">
-    <div class="header-inner">
-        <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
-            <div class="bar top-bar"></div>
-            <div class="bar middle-bar"></div>
-            <div class="bar bottom-bar"></div>
+<div ng-class="{'news-main-modal-open': hamburgerDropdown}">
+    <header id="header" class="header">
+        <div class="header-inner">
+            <div ng-click="hamburgerDropgdown = !hamburgerDropdown" class="navigation-toggle">
+                <div class="bar top-bar"></div>
+                <div class="bar middle-bar"></div>
+                <div class="bar bottom-bar"></div>
+            </div>
+            <div class="logo-wrapper">
+                <img src="./img/logo2.png" alt="logo">
+            </div>
+            <div class="header-nav">
+                <a ui-sref="home({'#':'welcome'})" class="welcome">WELCOME</a>
+                <a ui-sref="home({'#':'beans'})" ng-click="newsScrollTo('beans')" class="beans">THE BEANS</a>
+                <a ui-sref="home({'#':'factory'})" class="factory">THE FACTORY</a>
+                <a ui-sref="home({'#': 'chocolate'})" class="chocolate">THE CHOCOLATE</a>
+                <a class="products">PRODUCTS</a>
+                <a class="news">THE NEWS</a>
+            </div>
         </div>
-        <div class="logo-wrapper">
-            <img src="./img/logo2.png" alt="logo">
-        </div>
-        <div class="header-nav">
-            <a ui-sref="home({'#':'welcome'})" class="welcome">WELCOME</a>
-            <a ui-sref="home({'#':'beans'})" ng-click="newsScrollTo('beans')" class="beans">THE BEANS</a>
-            <a ui-sref="home({'#':'factory'})" class="factory">THE FACTORY</a>
-            <a ui-sref="home({'#': 'chocolate'})" class="chocolate">THE CHOCOLATE</a>
-            <a class="products">PRODUCTS</a>
-            <a class="news">THE NEWS</a>
+    </header>
+    <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
+    <div class="news-page">
+        <div id="article-1" class="article-1">
+            <header class="entry-header">
+                <div class="entry-dateline">MAY 27, 2016</div>
+                <div class="entry-title">COLEMAN & DAVIS FEATURES IN SAVEUR MAGAZINE!
+                </div>
+            </header>
+            <div class="entry-content">
+                <div class="entry-thumb-wrapper">
+                    <img class="entry-thumb" src="../img/coleman-davis-utah-chocolate-2_2000x1500_.jpg">
+                </div>
+                <div class="entry-summary">THE CRAFT CHOCOLATE CAPITAL OF AMERICA IS...UTAH?</div>
+            </div>
+            <footer class="entry-footer">
+                <div class="entry-actions">
+                    <div class="entry-like">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <span class="entry-like-text">0 LIKES</span>
+                    </div>
+                    <div class="entry-share">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <span class="entry-share-text">SHARE</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-</header>
-<dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
-<div class="news-page">
-    <div id="article-1" class="article-1">
-        <header class="entry-header">
-            <div class="entry-dateline">MAY 27, 2016</div>
-            <div class="entry-title">COLEMAN & DAVIS FEATURES IN SAVEUR MAGAZINE!
-            </div>
-        </header>
-        <div class="entry-content">
-            <div class="entry-thumb-wrapper">
-                <img class="entry-thumb" src="../img/coleman-davis-utah-chocolate-2_2000x1500_.jpg">
-            </div>
-            <div class="entry-summary">THE CRAFT CHOCOLATE CAPITAL OF AMERICA IS...UTAH?</div>
-        </div>
-        <footer class="entry-footer">
-            <div class="entry-actions">
-                <div class="entry-like">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <span class="entry-like-text">0 LIKES</span>
-                </div>
-                <div class="entry-share">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <span class="entry-share-text">SHARE</span>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-        <div class="pre-footer">
-            <div class="pre-footer-inner">
-                <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
+    <div class="pre-footer">
+        <div class="pre-footer-inner">
+            <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-                <a href="https://twitter.com/taste_choc" target="_blank" class="social-media-border">
+            <a href="https://twitter.com/taste_choc" target="_blank" class="social-media-border">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.instagram.com/taste_choc/" target="_blank" class="social-media-border">
+            <a href="https://www.instagram.com/taste_choc/" target="_blank" class="social-media-border">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://plus.google.com/107003014177056782057" target="_blank" class="social-media-border">
+            <a href="https://plus.google.com/107003014177056782057" target="_blank" class="social-media-border">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
-            </div>
         </div>
-<footer class="footer" fole="contentinfo">
-    <div class="footer-inner">
-        <div class="news-back-to-top-nav">
-            <a ng-click="scrollUpTo('header')">BACK TO TOP</a>
-        </div>
-        <div class="site-info">
-            <span class="site-address">TASTE ARTISAN CHOCOLATE, 117 NORTH UNIVERSITY AVENUE, PROVO, UT 84601</span>
-            <span class="space-phone">&nbsp</span>
-            <span class="site-phone">385.312.0331</span>
-            <span class="space-email">&nbsp</span>
-            <a href="" class="site-email">INFO<span>@</span>HAVETASTE.COM</a>
-        </div>
-        <!-- <div class="footer-blocks"></div> -->
     </div>
-</footer>
+    <footer class="footer" fole="contentinfo">
+        <div class="footer-inner">
+            <div class="news-back-to-top-nav">
+                <a ng-click="scrollUpTo('header')">BACK TO TOP</a>
+            </div>
+            <div class="site-info">
+                <span class="site-address">TASTE ARTISAN CHOCOLATE, 117 NORTH UNIVERSITY AVENUE, PROVO, UT 84601</span>
+                <span class="space-phone">&nbsp</span>
+                <span class="site-phone">385.312.0331</span>
+                <span class="space-email">&nbsp</span>
+                <a href="" class="site-email">INFO<span>@</span>HAVETASTE.COM</a>
+            </div>
+            <!-- <div class="footer-blocks"></div> -->
+        </div>
+    </footer>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <div ng-class="{'news-main-modal-open': hamburgerDropdown}"> 
+<div ng-class="{'news-main-modal-open': hamburgerDropdown}">
     <header id="header" class="header">
         <div class="header-inner">
             <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
@@ -24,7 +24,19 @@
     <div class="products-page">
         <div class="products-page-header">
             <div class="products-page-header-title">TASTE ARTISAN CHOCOLATE</div>
-            <div class="products-page-header-subtitle">Taste Artisan Chocolate utilizes traditional chocolate making methods and modern technologies to craft chocolate that showcases the extraordinary flavor range of the world's best cacao. We are currently working with distributors who are excited to place Taste Artisan Chocolate into fine establishments all over the world. Currently our products are available at select local retailers in Utah and online.</div>
+            <div class="products-page-header-subtitle">Taste Artisan Chocolate utilizes traditional chocolate making methods and modern technologies to craft chocolate
+                that showcases the extraordinary flavor range of the world's best cacao. We are currently working with distributors
+                who are excited to place Taste Artisan Chocolate into fine establishments all over the world. Currently our
+                products are available at select local retailers in Utah and online.</div>
+        </div>
+        <div class="products-list-wrapper">
+            <div ng-repeat="chocolate in chocolates" class="products-list">
+                <div class="products-list-front-large-container">
+                    <img src="{{chocolate.front_grande}}" class="products-list-img">
+                </div>
+                <div class="products-list-name">{{chocolate.name}}</div>
+                <div class="products-list-price">{{chocolate.price}}</div>
+            </div>
         </div>
     </div>
     <div class="pre-footer">
@@ -58,4 +70,4 @@
             <!-- <div class="footer-blocks"></div> -->
         </div>
     </footer>
- </div> 
+</div>

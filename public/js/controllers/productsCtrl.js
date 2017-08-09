@@ -11,8 +11,6 @@ angular.module('App').controller('productsCtrl', function ($scope, $location, $a
         $state.go('home', {
             '#': id
         });
-        // $location.hash(id);
-        // $anchorScroll();
     };
 
     $scope.products = function () {
@@ -22,5 +20,16 @@ angular.module('App').controller('productsCtrl', function ($scope, $location, $a
     $scope.news = function () {
         $state.go('news');
     };
+
+
+    $scope.chocolate = function () {
+        console.log('reached controller');
+        return service.chocolates().then(function (response) {
+            console.log('response', response.data['0']);
+            $scope.chocolates = response.data;
+        })
+    }
+
+    $scope.chocolate();
 
 });

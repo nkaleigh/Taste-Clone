@@ -17,4 +17,9 @@ angular.module('App', ['ui.router']).config(function ($stateProvider, $urlRouter
             templateUrl: './views/news.html',
             controller: 'newsCtrl'
         })
+        .state('productdetail', {
+            url: '/our-products/:item',
+            templateUrl: './views/productDetail.html',
+            controller: 'productDetailCtrl'
+        });
 });

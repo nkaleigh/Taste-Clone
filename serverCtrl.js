@@ -7,12 +7,11 @@ module.exports = {
         });
     },
     getchocolate: function(req, res) {
-        console.log('reached serverCtrl.getchocolate');
         req.app.get('db').getchocolate(req.params.chocoitem).then(function(response) {
-            console.log('db reponse', reponse);
-            res.status(200).send(response);
-        }).catch(function(err) {
-            res.status(500).send(err);
-        });
+            res.status(200).send(response[0]);
+        }).catch(function(err){
+                console.log('error', err)
+            res.status(500).send(err)
+        })
     }
 };

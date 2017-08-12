@@ -1,5 +1,6 @@
 <!DOCTYPE html>
- <div ng-class="{'main-modal-open': hamburgerDropdown}"> 
+
+<div ng-class="{'main-modal-open': hamburgerDropdown}">
     <header id="header" class="header">
         <div class="header-inner">
             <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
@@ -16,37 +17,22 @@
                 <a ui-sref="home({'#':'factory'})" class="factory">THE FACTORY</a>
                 <a ui-sref="home({'#': 'chocolate'})" class="chocolate">THE CHOCOLATE</a>
                 <a ui-sref="products" class="products">PRODUCTS</a>
-                <a ui-sref=news" class="news">THE NEWS</a>
+                <a ui-sref="news" class="news">THE NEWS</a>
             </div>
         </div>
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
-    <div class="news-page">
-        <div id="article-1" class="article-1">
-            <header class="entry-header">
-                <div class="entry-dateline">MAY 27, 2016</div>
-                <div class="entry-title">COLEMAN & DAVIS FEATURES IN SAVEUR MAGAZINE!
-                </div>
-            </header>
-            <div class="entry-content">
-                <div class="entry-thumb-wrapper">
-                    <img class="entry-thumb" src="../img/coleman-davis-utah-chocolate-2_2000x1500_.jpg">
-                </div>
-                <div class="entry-summary">THE CRAFT CHOCOLATE CAPITAL OF AMERICA IS...UTAH?</div>
-            </div>
-            <footer class="entry-footer">
-                <div class="entry-actions">
-                    <div class="entry-like">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <span class="entry-like-text">0 LIKES</span>
-                    </div>
-                    <div class="entry-share">
-                        <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        <span class="entry-share-text">SHARE</span>
-                    </div>
-                </div>
-            </footer>
+    <div class="productdetail-page">
+         <div class="productdetail-img-container"> 
+             <!-- <img src="{{item.front_grande}}" alt="Chocolate">  -->
         </div>
+        <div class="productdetail-info-container">
+            <div class="productdetail-info-name">{{item.name}}</div>
+            <div class="productdetail-info-description">{{item.description}}</div>
+            <div class="productdetail-info-price">{{item.price}}</div>
+        </div>
+
+
     </div>
     <div class="pre-footer">
         <div class="pre-footer-inner">
@@ -79,4 +65,4 @@
             <!-- <div class="footer-blocks"></div> -->
         </div>
     </footer>
- </div> 
+</div>

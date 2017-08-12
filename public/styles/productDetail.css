@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(./fonts/bebas_neue/BebasNeue%20Bold.otf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500");
+.productdetail-page {
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    background: pink;
+}
+
+.productdetail-info-name {
+    font-family: Bebas Neue;
+    font-size: 2.1em;
+    line-height: 39px;
+    color: #191d21;
+    margin-bottom: 13.8px;
+}
+
+.productdetail-info-description {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: .856em;
+    line-height: 24px;
+    letter-spacing: 1.3px;
+    color: #2a3037;
+    margin-bottom: 30px;
+}
+
+.productdetail-img-container {
+    height: auto;
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    background: red;
+}

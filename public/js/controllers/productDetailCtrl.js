@@ -1,4 +1,4 @@
-angular.module('App').controller('productsCtrl', function ($scope, $location, $anchorScroll, $state, service) {
+angular.module('App').controller('productDetailCtrl', function ($scope, $location, $anchorScroll, $state, service, $stateParams) {
 
     $scope.scrollUpTo = function (id) {
         var old = $location.hash();
@@ -21,13 +21,9 @@ angular.module('App').controller('productsCtrl', function ($scope, $location, $a
         $state.go('news');
     };
 
+    $scope.itemDetail = service.chocolate($stateParams.item).then(function (response) {
+        $scope.item = response;
+    });
 
-    $scope.chocolate = function () {
-        return service.chocolates().then(function (response) {
-            $scope.chocolates = response;
-        })
-    }
-
-    $scope.chocolate();
 
 });

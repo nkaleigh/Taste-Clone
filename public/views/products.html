@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div ng-class="{'news-main-modal-open': hamburgerDropdown}">
+<div ng-class="{'main-modal-open': hamburgerDropdown}">
     <header id="header" class="header">
         <div class="header-inner">
             <div ng-click="hamburgerDropdown = !hamburgerDropdown" class="navigation-toggle">
@@ -30,7 +30,7 @@
                 products are available at select local retailers in Utah and online.</div>
         </div>
         <div class="products-list-wrapper">
-            <div ng-repeat="chocolate in chocolates" class="products-list">
+            <div ui-sref="productdetail({item: chocolate.id})" ng-repeat="chocolate in chocolates" class="products-list">
                 <div class="products-list-front-large-container">
                     <img src="{{chocolate.front_grande}}" class="products-list-img">
                 </div>

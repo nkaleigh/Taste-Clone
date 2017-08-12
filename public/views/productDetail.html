@@ -23,10 +23,15 @@
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="productdetail-page">
-        <img src="{{item.front_grande}}" alt="Chocolate">
-        <div>{{item.name}}</div>
-        <div>{{item.description}}</div>
-        <div>{{item.price}}</div>
+         <div class="productdetail-img-container"> 
+             <!-- <img src="{{item.front_grande}}" alt="Chocolate">  -->
+        </div>
+        <div class="productdetail-info-container">
+            <div class="productdetail-info-name">{{item.name}}</div>
+            <div class="productdetail-info-description">{{item.description}}</div>
+            <div class="productdetail-info-price">{{item.price}}</div>
+        </div>
+
 
     </div>
     <div class="pre-footer">

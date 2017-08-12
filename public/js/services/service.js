@@ -6,7 +6,7 @@ angular.module('App').service('service', function($http) {
             url: '/api/tastechocolates/'
             // data: {name: 'kaleigh'}
         }).then(function(response) {
-            return response;
+            return response.data;
         });
     };
     this.chocolate = function(product) {

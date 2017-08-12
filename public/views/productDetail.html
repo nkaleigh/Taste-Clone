@@ -21,11 +21,15 @@
             </div>
         </div>
     </header>
-        <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
-        <div class="productdetail-page">
-            {{itemDetail}}
-        </div>
-<div class="pre-footer">
+    <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
+    <div class="productdetail-page">
+        <img src="{{item.front_grande}}" alt="Chocolate">
+        <div>{{item.name}}</div>
+        <div>{{item.description}}</div>
+        <div>{{item.price}}</div>
+
+    </div>
+    <div class="pre-footer">
         <div class="pre-footer-inner">
             <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
                     <i class="fa fa-facebook" aria-hidden="true"></i>

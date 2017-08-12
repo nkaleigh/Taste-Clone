@@ -21,7 +21,12 @@ angular.module('App').controller('productDetailCtrl', function ($scope, $locatio
         $state.go('news');
     };
 
-    $scope.itemDetail = service.chocolate($stateParams.item);
+    $scope.itemDetail = service.chocolate($stateParams.item).then(function(response) {
+        console.log('pDC response', response);
+                console.log('pDC response', response.data);
+
+        $scope.item = response;
+    })
 
 
 });

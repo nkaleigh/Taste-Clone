@@ -2,23 +2,57 @@
     font-family: Bebas Neue;
     src: url(./fonts/bebas_neue/BebasNeue%20Bold.otf);
 }
+@font-face {
+    font-family: Bebas Neue regular;
+    src: url(./fonts/bebas_neue/BebasNeue%20Regular.otf);
+}
+@font-face {
+    font-family: Bebas Neue book;
+    src: url(./fonts/bebas_neue/BebasNeue%20Book.otf);
+}
 
 @import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500");
 .productdetail-page {
-    height: auto;
     width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    background: pink;
+    height: auto;
+    display: block;
+    /* background: pink; */
+    padding: 63px 45px;
+}
+
+.productdetail-img-container {
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+
+.productdetail-img {
+    width: 100%;
+    height: auto;
+}
+
+.productdetail-info-container {
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
 }
 
 .productdetail-info-name {
-    font-family: Bebas Neue;
+    font-family: Bebas Neue regular;
     font-size: 2.1em;
     line-height: 39px;
     color: #191d21;
-    margin-bottom: 13.8px;
+    margin-bottom: 20px;
+     /* text-align: center;  */
+}
+
+.productdetail-info-price {
+    font-family: Bebas Neue regular;
+    font-size: 1.5em;
+     color: #191d21;     
+    margin-bottom: 20px;
+      /* text-align: center;   */
 }
 
 .productdetail-info-description {
@@ -28,12 +62,5 @@
     letter-spacing: 1.3px;
     color: #2a3037;
     margin-bottom: 30px;
-}
-
-.productdetail-img-container {
-    height: auto;
-    width: 50px;
-    display: flex;
-    justify-content: flex-end;
-    background: red;
+    /* text-align: center; */
 }

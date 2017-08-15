@@ -8,8 +8,12 @@
 .products-page {
     width: 100%;
     height: auto;
-    padding: 63px 20px;
-    /* background: pink; */
+     /* background: pink;  */
+}
+
+.products-page-wrapper {
+        padding: 63px 20px;
+
 }
 
 .products-page-header-title {
@@ -86,7 +90,7 @@
     .products-page-header-title {
         font-size: 2.7em;
     }
-    .products-page {
+    .products-page-wrapper {
         padding: 53px 34px;
     }
     .products-list-wrapper {
@@ -98,13 +102,13 @@
 }
 
 @media (min-width: 770px) {
-    .products-page {
+    .products-page-wrapper {
         padding: 105px 34px;
     }
 }
 
 @media (min-width: 1024px) {
-    .products-page {
+    .products-page-wrapper {
         padding: 105px 13%;
     }
     .products-list {

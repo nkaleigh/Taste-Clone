@@ -22,20 +22,22 @@
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="products-page">
-        <div class="products-page-header">
-            <div class="products-page-header-title">TASTE ARTISAN CHOCOLATE</div>
-            <div class="products-page-header-subtitle">Taste Artisan Chocolate utilizes traditional chocolate making methods and modern technologies to craft chocolate
-                that showcases the extraordinary flavor range of the world's best cacao. We are currently working with distributors
-                who are excited to place Taste Artisan Chocolate into fine establishments all over the world. Currently our
-                products are available at select local retailers in Utah and online.</div>
-        </div>
-        <div class="products-list-wrapper">
-            <div ui-sref="productdetail({item: chocolate.id})" ng-repeat="chocolate in chocolates" class="products-list">
-                <div class="products-list-front-large-container">
-                    <img src="{{chocolate.front_grande}}" class="products-list-img">
+        <div class="products-page-wrapper">
+            <div class="products-page-header">
+                <div class="products-page-header-title">TASTE ARTISAN CHOCOLATE</div>
+                <div class="products-page-header-subtitle">Taste Artisan Chocolate utilizes traditional chocolate making methods and modern technologies to craft chocolate
+                    that showcases the extraordinary flavor range of the world's best cacao. We are currently working with
+                    distributors who are excited to place Taste Artisan Chocolate into fine establishments all over the world.
+                    Currently our products are available at select local retailers in Utah and online.</div>
+            </div>
+            <div class="products-list-wrapper">
+                <div ui-sref="productdetail({item: chocolate.id})" ng-repeat="chocolate in chocolates" class="products-list">
+                    <div class="products-list-front-large-container">
+                        <img src="{{chocolate.front_grande}}" class="products-list-img">
+                    </div>
+                    <div class="products-list-name">{{chocolate.name}}</div>
+                    <div class="products-list-price">{{chocolate.price}}</div>
                 </div>
-                <div class="products-list-name">{{chocolate.name}}</div>
-                <div class="products-list-price">{{chocolate.price}}</div>
             </div>
         </div>
     </div>

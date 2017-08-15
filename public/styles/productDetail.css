@@ -1,14 +1,6 @@
 @font-face {
-    font-family: Bebas Neue;
-    src: url(./fonts/bebas_neue/BebasNeue%20Bold.otf);
-}
-@font-face {
     font-family: Bebas Neue regular;
     src: url(./fonts/bebas_neue/BebasNeue%20Regular.otf);
-}
-@font-face {
-    font-family: Bebas Neue book;
-    src: url(./fonts/bebas_neue/BebasNeue%20Book.otf);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic");
@@ -16,15 +8,30 @@
 .productdetail-page {
     width: 100%;
     height: auto;
+     /* background: pink;  */
+    padding: 63px 0;
+}
+
+.productdetail-img-info-container {
+    height: auto;
     display: block;
-    /* background: pink; */
-    padding: 63px 45px;
+     /* background: orange;  */
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.productdetail-img-container-wrapper {
+    width: 100%;
+    height: auto;
+     display: flex;
+     justify-content: center;  
+    /* background: blue;  */
 }
 
 .productdetail-img-container {
-    width: 100%;
+    width: 300px;
     height: auto;
-    /* background: red; */
+      /* background: red;   */
 }
 
 .productdetail-img {
@@ -33,26 +40,31 @@
 }
 
 .productdetail-info-container {
-    width: 100%;
-    height: auto;
-    margin-top: 45px;
+    margin-top: 20px;
+    /* margin-left: 13%;
+    margin-right: 13%; */
+     /* background: yellow;  */
 }
 
 .productdetail-info-name {
     font-family: Bebas Neue regular;
-    font-size: 2.1em;
+    font-size: 2em;
     line-height: 39px;
     color: #191d21;
     margin-bottom: 20px;
-     /* text-align: center;  */
+    text-align: center;
 }
 
 .productdetail-info-price {
-    font-family: Bebas Neue regular;
-    font-size: 1.5em;
-     color: #191d21;     
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 1.2em;
+    color: #191d21;
     margin-bottom: 20px;
-      /* text-align: center;   */
+    text-align: center;
+    border-top: .5px solid #191d21;
+    border-bottom: .5px solid #191d21;
+    padding-top: 10px;
+    padding-bottom: 6px;
 }
 
 .productdetail-info-description {
@@ -63,4 +75,45 @@
     color: #2a3037;
     margin-bottom: 30px;
     /* text-align: center; */
+}
+
+.productdetail-button {
+    width: 100%;
+    background-color: white;
+    color: #191d21;
+    border: .5px solid #191d21;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: .856em;
+    padding: 10px 0;
+}
+
+.productdetail-button:hover {
+    background-color: #191d21;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 480px) {
+    .productdetail-img-container {
+        width: 420px;
+    }
+}
+
+@media (min-width: 770px) {
+    .productdetail-img-info-container{
+         display: flex; 
+        /* justify-content: space-between; */
+    }
+    .productdetail-img-container-wrapper {
+    }
+    .productdetail-img-container-wrapper {
+        /* margin-left: 7%; */
+        width: 50%;
+    }
+    .productdetail-info-container {
+        width: 50%;
+        margin-top: 0;
+        margin-left: 0;
+          margin-right: 0;  
+    }
 }

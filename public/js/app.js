@@ -25,6 +25,6 @@ angular.module('App', ['ui.router']).config(function ($stateProvider, $urlRouter
         .state('cart', {
             url: '/cart',
             templateUrl: './views/cart.html',
-            controller: 'cart'
+            controller: 'cartCtrl'
         });
 });

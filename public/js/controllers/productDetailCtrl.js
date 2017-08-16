@@ -25,5 +25,10 @@ angular.module('App').controller('productDetailCtrl', function ($scope, $locatio
         $scope.item = response;
     });
 
+    $scope.addItem = function(itemId) {
+        console.log('itemId', itemId);
+        service.addItem(itemId);
+    };
+
 
 });

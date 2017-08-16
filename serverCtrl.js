@@ -12,5 +12,12 @@ module.exports = {
         }).catch(function (err) {
             res.status(500).send(err);
         })
+    },
+    addItem: function(req, res) {
+        req.app.get('db').addItem([req.body.id]).then(function(response){
+            res.status(200).send(response);
+        }.catch(function(err){
+            res.status(500).send(err);
+        });
     }
 };

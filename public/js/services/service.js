@@ -14,5 +14,15 @@ angular.module('App').service('service', function($http) {
             return response.data;
         })
     };
+    this.addItem = function(item) {
+        console.log('service:addItem', item);
+        return $http({
+            method: 'POST',
+            url: '/api/addItem',
+            data: item
+        }).then(function(resonse) {
+            console.log('response', response);
+        });
+    };
 
 });

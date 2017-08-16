@@ -22,6 +22,7 @@ const controller = require('./serverCtrl');
 
 app.get('/api/tastechocolates/', controller.getchocolates);
 app.get('/api/getchocolate/:chocoitem', controller.getchocolate);
+app.post('/api/addItem/', controller.addItem);
 
 app.listen(port, function() {
     console.log('Listening on port ' + port);

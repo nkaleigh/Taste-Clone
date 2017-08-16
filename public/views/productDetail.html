@@ -34,7 +34,7 @@
                 <div class="productdetail-info-price">{{item.price}}</div>
                 <div class="productdetail-info-description">{{item.description}}</div>
                 <div class="productdetail-checkout">
-                    <button ui-sref="cart" class="productdetail-button" type="submit">ADD TO CART</button>
+                    <button ui-sref="cart" class="productdetail-button" type="submit" ng-click="addItem(item.id)">ADD TO CART</button>
                 </div>
             </div>
         </div>

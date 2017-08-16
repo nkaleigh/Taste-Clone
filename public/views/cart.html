@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <div ng-class="{'main-modal-open': hamburgerDropdown}">
     <header id="header" class="header">
         <div class="header-inner">
@@ -22,21 +21,11 @@
         </div>
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
-    <div class="productdetail-page">
-        <div class="productdetail-img-info-container">
-            <div class="productdetail-img-container-wrapper">
-                <div class="productdetail-img-container">
-                    <img class="productdetail-img" src="{{item.front_grande}}" alt="Chocolate">
-                </div>
-            </div>
-            <div class="productdetail-info-container">
-                <div class="productdetail-info-name">{{item.name}}</div>
-                <div class="productdetail-info-price">{{item.price}}</div>
-                <div class="productdetail-info-description">{{item.description}}</div>
-                <div class="productdetail-checkout">
-                    <button ui-sref="cart" class="productdetail-button" type="submit">ADD TO CART</button>
-                </div>
-            </div>
+    <div class="cart-page">
+        <div class="cart-page-title">CART</div>
+        <div class="cart-list-wrapper">
+            <div class="cart-list-headings"></div>
+            <div class="cart-list-items"></div>
         </div>
     </div>
     <div class="pre-footer">

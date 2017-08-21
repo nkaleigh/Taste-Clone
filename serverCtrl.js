@@ -11,12 +11,12 @@ module.exports = {
             res.status(200).send(response[0]);
         }).catch(function (err) {
             res.status(500).send(err);
-        })
+        });
     },
     addItem: function(req, res) {
         req.app.get('db').addItem([req.body.id]).then(function(response){
             res.status(200).send(response);
-        }.catch(function(err){
+        }).catch(function(err){
             res.status(500).send(err);
         });
     }

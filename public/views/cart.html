@@ -24,8 +24,18 @@
     <div class="cart-page">
         <div class="cart-page-title">CART</div>
         <div class="cart-list-wrapper">
-            <div class="cart-list-headings"></div>
-            <div class="cart-list-items"></div>
+            <div class="cart-list-headings">
+                <div>PRODUCT</div>
+                <div>PRICE</div>
+                <div>QUANTITY</div>
+                <div>TOTAL</div>
+            </div>
+            <div class="cart-list-items" ng-repeat="">
+                <div>{{cartitem.img}}</div>
+                <div>{{cartitem.price}}</div>
+                <div>{{cartitem.quantity}}</div>
+                <div>{{cartitem.total}}</div>                
+            </div>
         </div>
     </div>
     <div class="pre-footer">

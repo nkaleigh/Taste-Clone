@@ -15,7 +15,7 @@ angular.module('App').service('service', function($http) {
         })
     };
     this.addItem = function(item) {
-        console.log('service:addItem', item);
+        console.log('service:addItem:item', item);
         return $http({
             method: 'POST',
             url: '/api/addItem',

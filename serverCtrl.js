@@ -13,10 +13,31 @@ module.exports = {
             res.status(500).send(err);
         });
     },
-    addItem: function(req, res) {
-        req.app.get('db').addItem([req.body.id]).then(function(response){
+    addItem: function (req, res) {
+        let id = req.body.itemId;
+        let quantity = req.body.quantity;
+        console.log('req.body', req.body);
+        req.app.get('db').confirmItem(id).then(function (response) {
+            console.log('serverCtrl:reached elephantsql', response);
+            if (response[0] !== undefined) {
+                req.app.get('db').addQuantity([id, quantity]).then(function (response) {
+                    console.log('response1');
+                    res.status(200).send();
+                }).catch(function (err) {
+                    console.log('response2');
+                    res.status(500).send(err);
+                });
+            } else {
+                req.app.get('db').addItem([id, quantity]).then(function (response) {
+                    console.log('response3');
+                    res.status(200).send();
+                }).catch(function (err) {
+                    console.log('response4');
+                    res.status(500).send(err);
+                });
+            }
             res.status(200).send(response);
-        }).catch(function(err){
+        }).catch(function (err) {
             res.status(500).send(err);
         });
     }

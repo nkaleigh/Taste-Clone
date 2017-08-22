@@ -26,9 +26,11 @@ angular.module('App').controller('productDetailCtrl', function ($scope, $locatio
     });
 
     $scope.addItem = function(itemId) {
-        console.log('itemId', itemId);
-        service.addItem(itemId);
+        console.log('productDetailCtrl:addItem:itemId', itemId);
+        var itemQuantity = 1;
+        var itemObj = {itemId, "quantity": itemQuantity};
+        console.log('productDetailCtrl:addItem:itemObj', itemObj);
+        service.addItem(itemObj);
     };
-
 
 });

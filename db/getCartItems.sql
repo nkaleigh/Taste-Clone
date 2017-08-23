@@ -1,0 +1,1 @@
+select name, price, description, front_grande, chocolate_id, quantity from tastechocolates join cart on tastechocolates.id = cart.chocolate_id;

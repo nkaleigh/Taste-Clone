@@ -42,8 +42,9 @@ module.exports = {
         });
     },
     getCartItems: function(req, res) {
+        console.log('serverCtrl');
         req.app.get('db').getCartItems().then(function (response) {
-            console.log('getCartItems worked');
+            console.log('getCartItems worked', response);
             res.status(200).send(response);
         }).catch(function(err) {
             res.status(500).send(err);

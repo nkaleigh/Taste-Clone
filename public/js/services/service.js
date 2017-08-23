@@ -24,12 +24,14 @@ angular.module('App').service('service', function($http) {
             console.log('response', response);
         });
     };
-    this.getCartItems = function(item) {
-        return ({
+    this.getCartItems = function() {
+        console.log('service');
+        return $http({
             method: 'GET',
-            url: '/api/getCartItems'
+            url: '/api/getCartItems/'
         }).then(function(response) {
-            return response;
+            console.log('service:response', response.data);  
+            return response.data;
         });
     };
 

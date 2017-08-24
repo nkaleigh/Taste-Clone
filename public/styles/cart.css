@@ -38,3 +38,23 @@
     height: auto;
     background: orange;
 }
+
+.cart-list-items-img {
+width: 400px;
+}
+
+.cart-list-items-name {
+text-align: center;
+}
+
+.cart-list-items-price {
+    text-align: center;
+}
+
+.cart-list-items-quantity {
+    text-align: center;
+}
+
+.cart-list-headings {
+    display: none;
+}

@@ -8,8 +8,11 @@
 .cart-page {
     width: 100%;
     height: auto;
-    padding: 63px 0;
     background: blue;
+}
+
+.cart-page-wrapper {
+    padding: 63px 20px;    
 }
 
 .cart-page-title {
@@ -17,7 +20,9 @@
     height: 75px;
     text-align: center;
     font-family: Bebas Neue;
-    font-size: 2.7em;
+    font-size: 2.1em;
+    color: #191d21;
+    
     background: pink;
 }
 
@@ -25,34 +30,75 @@
     width: 100%;
     height: auto;
     background: green;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    color: #191d21;
+    font-size: .8em;
 }
 
 .cart-list-headings {
     width: 100%;
     height: 100px;
-    background: red;
+    /* background: red; */
 }
 
 .cart-list-items {
     width: 100%;
     height: auto;
-    background: orange;
+    /* background: orange; */
 }
 
 .cart-list-items-img {
-width: 400px;
+    width: 359px;
 }
 
 .cart-list-items-name {
-text-align: center;
-}
+    text-align: center;
+    margin-bottom: 10px;}
 
 .cart-list-items-price {
     text-align: center;
 }
 
-.cart-list-items-quantity {
-    text-align: center;
+.cart-list-add-item-container {
+    background: purple;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+
+.cart-list-add-item-quantity {
+    width: 48px;
+    /* display: inline; */
+    /* margin-bottom: 0; */
+    padding: 8px 5px;  
+    border-radius: 8px;
+    border: none;   
+}
+
+.cart-list-add-item-quantity:focus {
+outline: none;
+}
+
+input::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+.cart-list-add-item-button {
+    border-radius: 300px;
+    color: #fff;
+    background-color: rgba(28, 21, 19, .86);
+    border-color: rgba(28, 21, 19, .86);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: .72em;
+    padding: 12.6px 24px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.cart-list-add-item-button:hover {
+    opacity: .8;
 }
 
 .cart-list-headings {

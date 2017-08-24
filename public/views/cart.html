@@ -22,51 +22,61 @@
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="cart-page">
-        <div class="cart-page-title">CART</div>
         <div class="cart-list-wrapper">
+
+            <div class="cart-page-title">CART</div>
             <div class="cart-list-headings">
                 <div>PRODUCT</div>
                 <div>PRICE</div>
                 <div>QUANTITY</div>
                 <div>TOTAL</div>
             </div>
-            <div class="cart-list-items" ng-repeat="item in cartItems">
-                <img class="cart-list-items-img" src="{{item.front_large}}"></img>
+            <form class="cart-list-items" ng-repeat="item in cartItems">
+                <img class="cart-list-items-img" src="{{item.front_large}}">
                 <div class="cart-list-items-name">{{item.name}}</div>
                 <div class="cart-list-items-price">{{item.price}}</div>
-                <div class="cart-list-items-quantity">{{item.quantity}}</div>
-            </div>
+                <div class="cart-list-add-item-container">
+                    <div class="cart-list-add-item-quantity">
+                        <p>Qty</p>
+                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" min="1" max="12">
+                    </div>
+                    <div class="cart-list-add-item-button-container">
+                        <button class="cart-list-add-item-button">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-    <div class="pre-footer">
-        <div class="pre-footer-inner">
-            <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
+</div>
+<div class="pre-footer">
+    <div class="pre-footer-inner">
+        <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-            <a href="https://twitter.com/taste_choc" target="_blank" class="social-media-border">
+        <a href="https://twitter.com/taste_choc" target="_blank" class="social-media-border">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-            <a href="https://www.instagram.com/taste_choc/" target="_blank" class="social-media-border">
+        <a href="https://www.instagram.com/taste_choc/" target="_blank" class="social-media-border">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
-            <a href="https://plus.google.com/107003014177056782057" target="_blank" class="social-media-border">
+        <a href="https://plus.google.com/107003014177056782057" target="_blank" class="social-media-border">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
-        </div>
     </div>
-    <footer class="footer" fole="contentinfo">
-        <div class="footer-inner">
-            <div class="news-back-to-top-nav">
-                <a ng-click="scrollUpTo('header')">BACK TO TOP</a>
-            </div>
-            <div class="site-info">
-                <span class="site-address">TASTE ARTISAN CHOCOLATE, 117 NORTH UNIVERSITY AVENUE, PROVO, UT 84601</span>
-                <span class="space-phone">&nbsp</span>
-                <span class="site-phone">385.312.0331</span>
-                <span class="space-email">&nbsp</span>
-                <a href="" class="site-email">INFO<span>@</span>HAVETASTE.COM</a>
-            </div>
-            <!-- <div class="footer-blocks"></div> -->
+</div>
+<footer class="footer" fole="contentinfo">
+    <div class="footer-inner">
+        <div class="news-back-to-top-nav">
+            <a ng-click="scrollUpTo('header')">BACK TO TOP</a>
         </div>
-    </footer>
+        <div class="site-info">
+            <span class="site-address">TASTE ARTISAN CHOCOLATE, 117 NORTH UNIVERSITY AVENUE, PROVO, UT 84601</span>
+            <span class="space-phone">&nbsp</span>
+            <span class="site-phone">385.312.0331</span>
+            <span class="space-email">&nbsp</span>
+            <a href="" class="site-email">INFO<span>@</span>HAVETASTE.COM</a>
+        </div>
+        <!-- <div class="footer-blocks"></div> -->
+    </div>
+</footer>
 </div>

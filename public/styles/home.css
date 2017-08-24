@@ -223,6 +223,12 @@ h3 {
     font-size: .72em;
     padding: 12.6px 24px;
     letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    opacity: .8;
+    
 }
 
 .pre-footer {

@@ -22,29 +22,24 @@
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="cart-page">
-        <div class="cart-list-wrapper">
-
-            <div class="cart-page-title">CART</div>
-            <div class="cart-list-headings">
-                <div>PRODUCT</div>
-                <div>PRICE</div>
-                <div>QUANTITY</div>
-                <div>TOTAL</div>
-            </div>
-            <form class="cart-list-items" ng-repeat="item in cartItems">
-                <img class="cart-list-items-img" src="{{item.front_large}}">
-                <div class="cart-list-items-name">{{item.name}}</div>
-                <div class="cart-list-items-price">{{item.price}}</div>
-                <div class="cart-list-add-item-container">
-                    <div class="cart-list-add-item-quantity">
-                        <p>Qty</p>
-                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" min="1" max="12">
-                    </div>
-                    <div class="cart-list-add-item-button-container">
-                        <button class="cart-list-add-item-button">ADD TO CART</button>
-                    </div>
+        <div class="cart-page-wrapper">
+            <div class="cart-list-wrapper">
+                <div class="cart-page-title">CART</div>
+                <div class="cart-list-headings">
+                    <div>PRODUCT</div>
+                    <div>PRICE</div>
+                    <div>QUANTITY</div>
+                    <div>TOTAL</div>
                 </div>
-            </form>
+                <form class="cart-list-items" ng-repeat="item in cartItems">
+                    <img class="cart-list-items-img" src="{{item.front_large}}">
+                    <div class="cart-list-items-name">{{item.name}}</div>
+                    <div class="cart-list-items-price">{{item.price}}</div>
+                        <div class="cart-list-add-item-quantity-container">
+                                <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" min="0" max="12">
+                        </div>                        
+                </form>
+            </div>
         </div>
     </div>
 </div>

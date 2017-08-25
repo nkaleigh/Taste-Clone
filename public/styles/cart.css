@@ -8,11 +8,12 @@
 .cart-page {
     width: 100%;
     height: auto;
-    background: blue;
+    /* background: blue; */
 }
 
 .cart-page-wrapper {
-    padding: 63px 20px;    
+    padding: 63px 20px;   
+    /* background: orangered;  */
 }
 
 .cart-page-title {
@@ -22,14 +23,13 @@
     font-family: Bebas Neue;
     font-size: 2.1em;
     color: #191d21;
-    
-    background: pink;
+    /* background: pink; */
 }
 
 .cart-list-wrapper {
     width: 100%;
     height: auto;
-    background: green;
+    /* background: green; */
     font-family: 'Carrois Gothic SC', sans-serif;
     color: #191d21;
     font-size: .8em;
@@ -60,23 +60,29 @@
 }
 
 .cart-list-add-item-container {
-    background: purple;
-    display: flex;
+    /* background: purple; */
+    /* display: flex;
     justify-content: flex-start;
-    align-items: space-around;
+    align-items: flex-start; */
+}
+
+.cart-list-add-item-quantity-container {
+    text-align: center;
+/* background: purple; */
 }
 
 .cart-list-add-item-quantity {
     width: 48px;
     /* display: inline; */
-    /* margin-bottom: 0; */
+    margin: 10px auto;
     padding: 8px 5px;  
     border-radius: 8px;
-    border: none;   
+    border: 1px solid #191d21; 
+    /* background: blue;   */
 }
 
 .cart-list-add-item-quantity:focus {
-outline: none;
+/* outline: none; */
 }
 
 input::-webkit-inner-spin-button {

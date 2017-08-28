@@ -8,11 +8,11 @@
 .products-page {
     width: 100%;
     height: auto;
-     /* background: pink;  */
+     background: pink; 
 }
 
 .products-page-wrapper {
-        padding: 63px 20px;
+    padding: 63px 20px;
 }
 
 .products-page-header-title {
@@ -21,6 +21,7 @@
     line-height: 39px;
     color: #191d21;
     margin-bottom: 13.8px;
+    background: yellow;
 }
 
 .products-page-header-subtitle {

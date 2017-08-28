@@ -32,13 +32,21 @@
                     <div>TOTAL</div>
                 </div>
                 <form class="cart-list-items" ng-repeat="item in cartItems">
-                    <img class="cart-list-items-img" src="{{item.front_large}}">
+                    <div class="cart-list-items-img-container">
+                        <img class="cart-list-items-img" src="{{item.front_large}}">
+                    </div>
                     <div class="cart-list-items-name">{{item.name}}</div>
                     <div class="cart-list-items-price">{{item.price}}</div>
-                        <div class="cart-list-add-item-quantity-container">
-                                <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" min="0" max="12">
-                        </div>                        
+                    <div class="cart-list-add-item-quantity-container">
+                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" onkeydown="return false" min="0" max="12">
+                    </div>
                 </form>
+            </div>
+            <div class="orderSummary">
+                <div>
+                    <div class="subtotal"></div>
+                </div>
+                <button class="checkout"></button>
             </div>
         </div>
     </div>

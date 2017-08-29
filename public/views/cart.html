@@ -24,13 +24,8 @@
     <div class="cart-page">
         <div class="cart-page-wrapper">
             <div class="cart-list-wrapper">
-                <div class="cart-page-title">CART</div>
-                <div class="cart-list-headings">
-                    <div>PRODUCT</div>
-                    <div>PRICE</div>
-                    <div>QUANTITY</div>
-                    <div>TOTAL</div>
-                </div>
+                <div class="cart-page-title">TASTE ARTISAN CHOCOLATE CART</div>
+                <div class="cart-page-subtitle">Adding an item to your cart doesn't hold it, so get what you love while supplies last.</div>
                 <form class="cart-list-items" ng-repeat="item in cartItems">
                     <div class="cart-list-items-img-container">
                         <img class="cart-list-items-img" src="{{item.front_large}}">
@@ -42,12 +37,15 @@
                     </div>
                 </form>
             </div>
-            <div class="orderSummary">
-                <div>
-                    <div class="subtotal"></div>
+                <div class="order-summary">
+                    <div class="subtotal-container">
+                        <div class="subtotal">SUBTOTAL: $400</div>
+                    </div>
+                    <div class="cart-button-container">
+                        <button class="update-button">UPDATE</button>
+                        <button class="checkout-button">CHECKOUT</button>
+                    </div>
                 </div>
-                <button class="checkout"></button>
-            </div>
         </div>
     </div>
 </div>

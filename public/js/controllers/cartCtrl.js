@@ -1,11 +1,19 @@
-angular.module('App').controller('cartCtrl', function($scope, service) {
+angular.module('App').controller('cartCtrl', function ($scope, service) {
 
-    getCartItems = function() {
-        console.log('cartCtrl');
-        $scope.cartItems = service.getCartItems().then(function(response) {
+ 
+        service.getCartItems().then(function (response) {
             console.log('cartCtrl:cartItems', response);
-            $scope.cartItems = response;
+            $scope.cartItems = response.items;
+            $scope.subtotal = response.subtotal;
         });
+
+    // $scope.subtotal = 
+
+    $scope.quantityChange = function() {
+        console.log('changed!');
     };
-    getCartItems();
+    // $scope.updateCartQuantity = function(quantityUpdates) {
+    //     console.log('cartCtrl:update', quantityUpdates);
+    //     service.updateCartQuantity(quantityUpdates);
+    // };
 });

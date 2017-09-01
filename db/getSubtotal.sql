@@ -1,0 +1,1 @@
+select sum(tastechocolates.price*cart.quantity) as subtotal from tastechocolates join cart on tastechocolates.id = cart.chocolate_id;

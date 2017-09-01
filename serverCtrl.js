@@ -43,9 +43,17 @@ module.exports = {
     },
     getCartItems: function(req, res) {
         console.log('serverCtrl');
-        req.app.get('db').getCartItems().then(function (response) {
-            console.log('getCartItems worked', response);
-            res.status(200).send(response);
+        req.app.get('db').getCartItems().then(function (response1) {
+            console.log('getCartItems worked', response1);
+            req.app.get('db').getSubtotal().then(function(response2) {
+                console.log('getSubtotal', response2);
+                res.status(200).send({
+                    items: response1,
+                    subtotal: response2[0].subtotal
+                });
+            }).catch(function(err) {
+                res.status(500).send(err);
+            });
         }).catch(function(err) {
             res.status(500).send(err);
         });

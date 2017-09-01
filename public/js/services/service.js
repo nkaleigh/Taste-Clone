@@ -34,5 +34,13 @@ angular.module('App').service('service', function($http) {
             return response.data;
         });
     };
+    // this.updateCartQuantity = function(quantityUpdates) {
+    //     console.log('reached service:updateCartQuantity', quantityUpdates);
+    //     return $http({
+    //         method: 'PUT',
+    //         url: '/api/updateCartQuantity/',
+    //         body: quantityUpdates
+    //     });
+    // };
 
 });

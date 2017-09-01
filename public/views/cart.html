@@ -22,33 +22,32 @@
     </header>
     <dropdown-directive ng-show="hamburgerDropdown"></dropdown-directive>
     <div class="cart-page">
-        <div class="cart-page-wrapper">
+        <form class="cart-page-wrapper">
             <div class="cart-list-wrapper">
                 <div class="cart-page-title">TASTE ARTISAN CHOCOLATE CART</div>
                 <div class="cart-page-subtitle">Adding an item to your cart doesn't hold it, so get what you love while supplies last.</div>
-                <form class="cart-list-items" ng-repeat="item in cartItems">
+                <div class="cart-list-items" ng-repeat="item in cartItems">
                     <div class="cart-list-items-img-container">
                         <img class="cart-list-items-img" src="{{item.front_large}}">
                     </div>
                     <div class="cart-list-items-name">{{item.name}}</div>
                     <div class="cart-list-items-price">{{item.price}}</div>
                     <div class="cart-list-add-item-quantity-container">
-                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" onkeydown="return false" min="0" max="12">
+                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" onkeydown="return false" min="0" max="12" ng-model="{{item.quantity}}" ng-change="quantityChange()">
                     </div>
-                </form>
+                </div>
             </div>
                 <div class="order-summary">
                     <div class="subtotal-container">
-                        <div class="subtotal">SUBTOTAL: $400</div>
+                        <div class="subtotal">SUBTOTAL: {{subtotal}}</div>
                     </div>
                     <div class="cart-button-container">
-                        <button class="update-button">UPDATE</button>
+                        <!-- <button class="update-button" ng-click="updateCartQuantity(cartForm)">UPDATE</button> -->
                         <button class="checkout-button">CHECKOUT</button>
                     </div>
                 </div>
-        </div>
+        </form>
     </div>
-</div>
 <div class="pre-footer">
     <div class="pre-footer-inner">
         <a href="https://www.facebook.com/havetaste/" target="_blank" class="social-media-border">

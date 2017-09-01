@@ -33,7 +33,8 @@
                     <div class="cart-list-items-name">{{item.name}}</div>
                     <div class="cart-list-items-price">{{item.price}}</div>
                     <div class="cart-list-add-item-quantity-container">
-                        <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" onkeydown="return false" min="0" max="12" ng-model="{{item.quantity}}" ng-change="quantityChange()">
+                        <!-- <input class="cart-list-add-item-quantity" type="number" value="{{item.quantity}}" onkeydown="return false" min="0" max="12" ng-model="item.quantity"> -->
+                        <input class="cart-list-add-item-quantity" type="text" value="{{item.quantity}}" maxlength="2" ng-model="item.quantity">
                     </div>
                 </div>
             </div>
@@ -42,7 +43,7 @@
                         <div class="subtotal">SUBTOTAL: {{subtotal}}</div>
                     </div>
                     <div class="cart-button-container">
-                        <!-- <button class="update-button" ng-click="updateCartQuantity(cartForm)">UPDATE</button> -->
+                        <button class="update-button" ng-click="updateSubtotal(cartItems)">UPDATE</button>
                         <button class="checkout-button">CHECKOUT</button>
                     </div>
                 </div>

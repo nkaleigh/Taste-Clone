@@ -30,17 +30,13 @@ angular.module('App').service('service', function($http) {
             method: 'GET',
             url: '/api/getCartItems/'
         }).then(function(response) {
-            console.log('service:response', response.data);  
+            console.log('service:response', response.data);
             return response.data;
         });
     };
-    // this.updateCartQuantity = function(quantityUpdates) {
-    //     console.log('reached service:updateCartQuantity', quantityUpdates);
-    //     return $http({
-    //         method: 'PUT',
-    //         url: '/api/updateCartQuantity/',
-    //         body: quantityUpdates
-    //     });
-    // };
+    this.updateSubtotal = function(quantityUpdates) {
+        console.log('reached service:updateCartQuantity', quantityUpdates);
+        return $http.put('/api/updateSubtotal/', quantityUpdates);
+    };
 
 });

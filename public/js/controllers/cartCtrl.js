@@ -11,7 +11,6 @@ angular.module('App').controller('cartCtrl', function ($scope, service) {
         $scope.subtotal = response.subtotal;
     });
 
-    // $scope.subtotal =  
 
     $scope.updateSubtotal = function(quantityUpdates) {
         console.log('cartCtrl:update', quantityUpdates);

@@ -59,7 +59,6 @@ module.exports = {
         });
     },
     updateSubtotal: function (req, res) {
-        console.log('yololo');
         console.log('bananasssss', req.body);
         // req.app.get('db').
     }

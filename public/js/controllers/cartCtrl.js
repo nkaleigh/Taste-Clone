@@ -3,7 +3,6 @@ angular.module('App').controller('cartCtrl', function ($scope, service) {
     var originalQuantity = [];
 
     service.getCartItems().then(function (response) {
-        console.log('cartCtrl:cartItems', response);
         for (var i = 0; i < response.items.length; i++) {
             originalQuantity.push({chocolate_id: response.items[i].chocolate_id, quantity: response.items[i].quantity});
         }

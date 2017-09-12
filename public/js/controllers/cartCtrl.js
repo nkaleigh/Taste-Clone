@@ -13,7 +13,6 @@ angular.module('App').controller('cartCtrl', function ($scope, service) {
 
     $scope.updateSubtotal = function(quantityUpdates) {
         console.log('cartCtrl:update', quantityUpdates);
-        console.log('2 ' + originalQuantity);
         for (var i = 0; i < quantityUpdates.length; i++) {
             if (isNaN(quantityUpdates[i].quantity)) {
                 console.log(quantityUpdates[i].quantity + " is not a number");

@@ -12,7 +12,7 @@ angular.module('App').controller('cartCtrl', function ($scope, service) {
 
 
     $scope.updateSubtotal = function(quantityUpdates) {
-        // console.log('cartCtrl:update', quantityUpdates);
+        console.log('cartCtrl:update', quantityUpdates);
         for (var i = 0; i < quantityUpdates.length; i++) {
             if (isNaN(quantityUpdates[i].quantity)) {
                 console.log(quantityUpdates[i].quantity + " is not a number");
@@ -23,6 +23,9 @@ angular.module('App').controller('cartCtrl', function ($scope, service) {
                 }
             } 
         }    
-        service.updateSubtotal(quantityUpdates);
+        service.updateSubtotal(quantityUpdates).then(function(response) {
+            console.log('$scope.updateSubtotal:response', response);
+            $scope.subtotal = response.subtotal;
+        });
     };
 });

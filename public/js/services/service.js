@@ -35,8 +35,11 @@ angular.module('App').service('service', function($http) {
         });
     };
     this.updateSubtotal = function(quantityUpdates) {
-        // console.log('reached service:updateCartQuantity', quantityUpdates);ç
-        return $http.put('/api/updateSubtotal/', quantityUpdates);
+        console.log('reached service:updateCartQuantity', quantityUpdates);
+        return $http.put('/api/updateSubtotal/', quantityUpdates).then(function(response) {
+            console.log('updateSubtotal:response', response);
+            return response.data;
+        });
     };
 
 });

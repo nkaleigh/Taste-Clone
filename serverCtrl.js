@@ -59,7 +59,21 @@ module.exports = {
         });
     },
     updateSubtotal: function (req, res) {
-        console.log('bananasssss', req.body);
-        // req.app.get('db').
+        console.log('serverCtrl:updateSubtotal', req.body);
+        for (var i = 0; i < req.body.length; i++) {
+            let id = req.body[i].chocolate_id;
+            let quantity = req.body[i].quantity;
+            req.app.get('db').updateQuantity([id, quantity]).then(function(response) {
+                res.status(200);
+            }).catch(function(err) {
+                res.status(500).send(err);
+            });
+        }
+        req.app.get('db').getSubtotal().then(function(response) {
+            console.log('getSubtotal:response', response);
+            res.status(200).send(response[0]);
+        }).catch(function(err) {
+            res.status(500).send(err);
+        })
     }
 };

@@ -1,0 +1,1 @@
+update cart set quantity = $2 where chocolate_id = $1
